@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Currency Converter">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" lang="en" content="Miracle Iloh">
+        <meta name="copyright" lang="en" content="2018" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Free Currency Converter</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"> </script>
+       
+        <script src="js/curr_convert.js">  </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+        <script src="js/idb1.js"></script>
+        
+    </head>
+
+    <body>
+        <header >
+            <div style="background: #23d2b4; width: 100% ; min-height:60px; padding-top: 2px;" >
+                <h2 style="margin-top: 1%; text-align: center">
+                    <strong >Currency Converter</strong> 
+                </h2>
+            </div>
+        </header>
+        <div class="medium_columns">
+            
+                
+                    <div class="column_1">
+                        <input type="text" id="amount" placeholder="Enter amount to convert" />
+                    </div>
+                    <div class="column_2">
+                        <select id="CURR_FR" class="postfix">
+                            
+                            <!-- <option class="Curr_fetch"> </option> -->
+                        </select>
+                    </div>
+                    <div class="column_3" style="text-align: center;">
+                        <span  id="span">to</span>
+                    </div>
+                    <div >
+                        <select id="CURR_TO" class="postfix">
+                            <!-- <option class="Curr_fetch"></option> -->
+                        </select>
+                    </div>
+               
+            
+        
+        <div class="column_4">
+        
+            <button onclick="convertCurrency()" class="convert button">Convert
+
+            </button>
+        </div>
+
+        <div class="column_5">
+        <input type="text" id="CURR_VAL" readonly placeholder="Press Convert button" style="background-color: #eee; font-weight: bold;" />
+        </div>  
+        </div>
+        <footer>
+            <div class="footer"> 
+                <div class="row"> 
+                    <div class="row1"> <strong> An app designed incoporating the powerful features of service workers and indexeddb. 
+                        <br/> Many thanks to Udacity/Google for such an awesome experience<br/> 
+                        &copy 2018 Powered by Miracle Iloh - Udacity/Google Scholar </div>
+                </strong></div>
+            </div>
+        </footer>
+        
+    </body>
+
+</html>

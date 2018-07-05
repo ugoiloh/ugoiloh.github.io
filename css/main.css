@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    width:100%;
+    
+}
+body{
+   
+    background-color: #fff;
+    position: absolute;
+    
+}
+#amount{
+    
+    height: 20px;
+}
+.postfix{
+    
+    min-width: 100px;
+    min-height: 28px;
+    
+    
+    border: 1px solid blue;
+    }
+   
+#CURR_FR_VAL{
+    float: left;
+    
+}
+.medium_columns{
+    margin: 5em 10em auto;
+    display: flex;
+    width: 10%;
+    padding: 3em;
+      
+   
+}
+button{
+    margin-left: 2em;
+    background: #888;
+        width: 150px;
+        height:31px;
+        
+}
+ #CURR_VAL{
+    margin-left: 2em;
+    min-height: 28px;
+    
+}
+.column_3{
+    min-width: 100px;
+    height: 28px; 
+    border-color: #cbcbcb;
+    background: #f2f2f2;
+   
+    float: left;
+    text-align: center;
+     
+    
+}
+footer{
+    width:100%;
+    display: table-row;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 40px;
+    background: #23d2b4;
+}
+.row{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 62.5rem;
+}
+.row1{
+    position: relative;
+    width:100%;
+    text-align: center;    
+}
