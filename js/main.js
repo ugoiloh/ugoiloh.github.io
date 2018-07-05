@@ -349,27 +349,27 @@ const loadCurrency = (() => {
     }});
 
     
-// // caching data to the idb database
-    // fetch('https://free.currencyconverterapi.com/api/v5/currencies').then((response) => {
+// caching data to the idb database
+    fetch('https://free.currencyconverterapi.com/api/v5/currencies').then((response) => {
         
-    //     response.json().then((data) => {
+        response.json().then((data) => {
             
 
-    //         // console.log(data.results);
+            // console.log(data.results);
             
-    //         let nums = data.results;
+            let nums = data.results;
             
             
             
-    //         dbPromise.then((db) =>{
-    //           let tx = db.transaction("Mycurr","readwrite");
-    //           let store = tx.objectStore('Mycurr');
-    //           let num2 = (Object.values(nums));
+            dbPromise.then((db) =>{
+              let tx = db.transaction("Mycurr","readwrite");
+              let store = tx.objectStore('Mycurr');
+              let num2 = (Object.values(nums));
               
-    //           for (let num of num2) {
-    //           store.add(num)};return tx.complete;
-    //         }).then(() =>{
-    //           console.log('items added');});
+              for (let num of num2) {
+              store.add(num)};return tx.complete;
+            }).then(() =>{
+              console.log('items added');});
   
     
     // loading the listing of currencies from the idb database
@@ -411,5 +411,5 @@ const loadCurrency = (() => {
 //             curr[1].innerHTML = options;
 
         // })})}};
-      )
+      )})});
         window.addEventListener( "load", loadCurrency());
